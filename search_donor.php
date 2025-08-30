@@ -45,7 +45,7 @@
                     echo "<tr>
                             <td>".$row['name']."</td>
                             <td>".$row['blood_group']."</td>
-                            <td>".$row['contact']."</td>
+                            <td>".$row['phone']."</td>
                             <td>".$row['city']."</td>
                           </tr>";
                 }

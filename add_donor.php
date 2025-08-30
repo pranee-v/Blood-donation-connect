@@ -24,7 +24,7 @@
                 <option>AB+</option><option>AB-</option>
                 <option>O+</option><option>O-</option>
             </select>
-            <input type="text" name="contact" placeholder="Contact Number" required>
+            <input type="text" name="phone" placeholder="Contact Number" required>
             <input type="text" name="city" placeholder="City" required>
             <button type="submit" name="submit">Add Donor</button>
         </form>
@@ -33,11 +33,11 @@
         if(isset($_POST['submit'])) {
             $name = $_POST['name'];
             $blood_group = $_POST['blood_group'];
-            $contact = $_POST['contact'];
+            $phone = $_POST['phone'];
             $city = $_POST['city'];
 
-            $sql = "INSERT INTO donors (name, blood_group, contact, city) 
-                    VALUES ('$name','$blood_group','$contact','$city')";
+            $sql = "INSERT INTO donors (name, blood_group, phone, city) 
+                    VALUES ('$name','$blood_group','$phone','$city')";
             if ($conn->query($sql) === TRUE) {
                 echo "<p style='color:green; font-weight:bold;'>✅ Donor added successfully!</p>";
             } else {
