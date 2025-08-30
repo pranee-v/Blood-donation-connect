@@ -1,94 +1,86 @@
-Got it ✅ Here’s your **complete `README.md`** in one copy-paste block:
+# 🩸 Blood Donation Connect
 
-````markdown
-# Blood Donation Connect 🩸
-
-A simple **PHP + MySQL** web application that connects blood donors with people in need.  
-This project demonstrates full-stack development with donor registration, donor search,  
-and a clean, responsive UI.
+A simple web application to connect blood donors with people in need.
+Built using **PHP, MySQL, HTML, CSS**.
 
 ---
 
 ## 🚀 Features
-- 📝 Donor Registration Form (Name, Blood Group, Contact, City)  
-- 🔍 Search Donors by **Blood Group** & **City**  
-- 📊 Live Donor Count on Homepage  
-- 💻 Responsive UI with **HTML + CSS**  
-- ⚡ PHP + MySQL Backend with Basic Queries  
+
+* Add blood donors with details (Name, Age, Blood Group, City, Phone).
+* Search donors by **blood group** and **city**.
+* Automatically creates database (`blood_donation`) and table (`donors`) if not present.
+* Clean and user-friendly UI with CSS.
 
 ---
 
 ## 🛠️ Tech Stack
-- **Frontend:** HTML, CSS  
-- **Backend:** PHP  
-- **Database:** MySQL  
-- **Tools Used:** XAMPP / WAMP (for Apache & MySQL)  
 
+* **Frontend:** HTML, CSS
+* **Backend:** PHP
+* **Database:** MySQL
 
-## ⚡ Setup Instructions
+---
 
-### 1️⃣ Clone Repository
+## ⚙️ Setup Instructions
+
+### 1. Clone the Repository
+
 ```bash
-git clone https://github.com/your-username/blood-donation-connect.git
-````
+git clone https://github.com/Girijalajyothika/blood-donation-connect.git
+cd blood-donation-connect
+```
 
-### 2️⃣ Database Setup
+### 2. Move Project to XAMPP (or WAMP/LAMP)
 
-* Open **phpMyAdmin** → Create a new database:
-
-  ```sql
-  CREATE DATABASE blood_donation;
-  ```
-* Inside this DB, create table:
-
-  ```sql
-  CREATE TABLE donors (
-    id INT AUTO_INCREMENT PRIMARY KEY,
-    name VARCHAR(100) NOT NULL,
-    blood_group VARCHAR(5) NOT NULL,
-    contact VARCHAR(15) NOT NULL,
-    city VARCHAR(50) NOT NULL
-  );
-  ```
-
-### 3️⃣ Configure Project
-
-* Copy project folder into `htdocs/` (XAMPP) or `www/` (WAMP).
-* Make sure `db.php` has correct credentials:
-
-  ```php
-  $conn = new mysqli("localhost", "root", "", "blood_donation");
-  ```
-
-### 4️⃣ Run Project
-
-* Start **Apache** and **MySQL** in XAMPP/WAMP.
-* Visit in browser:
-
-  ```
-  http://localhost/blood-donation-connect/index.php
-  ```
-
----
-
-## 📌 Project Structure
+Copy the project folder into your XAMPP `htdocs` directory:
 
 ```
-blood-donation-connect/
-│── db.php              # Database connection
-│── index.php           # Homepage with donor stats
-│── add_donor.php       # Donor registration page
-│── search_donor.php    # Donor search page
-│── style.css           # Styling & responsive UI
-│── README.md           # Documentation
+C:/xampp/htdocs/blood_donation_connect
+```
+
+### 3. Database Setup (✅ Auto-creation Enabled)
+
+👉 **No manual database creation required!**
+
+* The `db.php` file will automatically create the database `blood_donation` and table `donors` on first run.
+
+### 4. Run the Project
+
+* Start **Apache** and **MySQL** from XAMPP Control Panel.
+* Open browser and go to:
+
+```
+http://localhost/blood_donation_connect/
 ```
 
 ---
 
-## 🎯 Future Improvements
+## 📌 Pages
 
-* Add **user authentication** (login/signup)
-* Donor profile management
-* Email/SMS notifications
-* Deploy on free hosting (e.g., 000WebHost, InfinityFree)
+1. **Home Page** (`index.php`) → Search for donors.
+2. **Add Donor Page** (`add_donor.php`) → Add new donor.
+3. **Search Results** (`search_donor.php`) → Show donor list.
+
+---
+
+## 📸 Screenshots (Optional)
+
+*(You can add screenshots of your UI here after running the app.)*
+
+---
+
+## 🤝 Contributing
+
+* Fork this repo
+* Make changes
+* Create a pull request 🚀
+
+---
+
+## 👩‍💻 Author
+
+Developed by **Girijala Jyothika**
+
+---
 
