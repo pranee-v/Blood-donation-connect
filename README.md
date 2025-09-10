@@ -80,7 +80,7 @@ http://localhost/blood_donation_connect/
 
 ## 👩‍💻 Author
 
-Developed by **Girijala Jyothika**
+Developed by **Praneeth Veeranki**
 
 ---
 
